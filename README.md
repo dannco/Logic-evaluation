@@ -6,7 +6,7 @@ For example, you can assert the rule "If A exists, then so must B" by typing ``A
 queries. By entering ``?:A,B``, the program will respond that it holds true for all set rules. However, typing ``?:A``
 will cause the program to respond that it cannot be true since if A is true, then so must B. Since B isn't included in the query, 
 and therefore not true, that rule is broken.  
-``?:B`` will also hold true since a false premise does not enforce any particular conclusion. 
+``?:B`` will also hold true since a false premise, namely A being false, does not enforce any particular requirement on the conclusion, meaning B could be either true or false without it breaking the rule. 
 
 The program can also execute both assertions and queries from text files by entering ``LOAD <file>``.  
 Set rules can be displayed and cleared using the commands ``SHOW ASSERTIONS`` and ``CLEAR ASSERTIONS``
